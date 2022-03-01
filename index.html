@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="style.css"/>
 <style>
 .pehu {font-family: "MS Mincho", "SimSong", serif;}
+@media print{
+.no_print
+{display:none;}
 </style>
 </head>
  
@@ -23,10 +26,10 @@
 <div id="hello">
 <img class="logo" src="logo.png">
 <h2 class="center"><u>音ビル２階</u> は、おおさか創造千島財団による創造的場づくり助成を獲得した個人／団体が共同運営するシェアスタジオです。</h2>
-
+<br/>
 <h1><u>OTO Building 2F</u> is a <i>share studio</i> operated cooperatively by individuals/groups 
 who obtained Grant for the cultivation of a creative place and environment.</h1>
-<p class="center"><img src="000.jpg" width="100%"></p>
+<p class="main"><img src="000.jpg" width="100%"></p>
 
 <br/>
 <div class="contents">
@@ -41,29 +44,86 @@ The <u>main room</u> is a room <i>for presentations</i>,
 <hr/>
 <h2>音ビル2階には、2つの部屋があります。</h2>
 <h2>1つは、「発表」を行うためのメインルーム。<br/>
-もう1つは、メインルームで行う「発表」のために、新しいアイデアを計画し準備するための部屋です。</h2>
-<h2 class="center"><a href="beta.pdf">ベータルームへようこそ</a></h2>
-<p style="text-align:center;">2020年1月制作</p>
-<h2><iframe src="beta.pdf"></iframe></h2>
+もう1つは、メインルームでの「発表」のために、新しいアイデアを計画し準備する部屋です。</h2>
+<h2 class="no_print" style="text-align:center;"><hr/><a href="beta.pdf">ベータルームへようこそ</a></h2>
+<p class="no_print" style="text-align:center;">2020年1月制作</p>
+<h2 class="no_print"><iframe src="beta.pdf"></iframe></h2>
 </div>
 </div>
 <div class="contents">
-<p class="click when" onclick="obj=document.getElementById('when').style; obj.display=(obj.display=='none')?'block':'none';">
+<p class="click when no_print" onclick="obj=document.getElementById('when').style; obj.display=(obj.display=='none')?'block':'none';">
 オープンします。
 <span class="symbol">We're Open</span></p>
-<div id="when" class="more" style="display:none;">
-<h2 class="center">誰もが <u>音ビル２階</u> を訪れることができる日</h2>
-<p style="text-align:center;">This is the days when <i>everyone can visit</i> <u>OTO Building 2F</u></p>
-<div id="main"><h2 class="center">工事中</h2></div>
+<div id="when" class="more" style="display:;">
+
+<header>
+<span>3.12.2022</span>
+<i>LAST BAZAAR</i>
+<span>3.21.2022</span>
+</header>
+<div class="boad">
+<h2>
+<ruby data-ruby="FORM IS">
+形式は
+</ruby>
+<u>Flea Market</u>
+<ruby data-ruby=",AND">
+で、
+</ruby>
+</h2>
+<h2>
+<ruby data-ruby="EVENT TITLE IS">
+タイトルは
+</ruby>
+</h2>
+<h2 class="title"><u>ラスト・バザー</u></h2>
+<h2 style="text-align:right;">です。</h2>
+
+<h2>
+<ruby data-ruby="FROM">
+時間は
+</ruby>
+<u>12:00</u>
+<ruby data-ruby="TO">
+から
+</ruby>
+<u>18:00</u>
+<ruby data-ruby=",WE OPEN.">
+まで　
+</ruby>
+</h2>
+<h2>
+<ruby data-ruby="PLACE IS">
+場所は
+</ruby>
+<u><b>β room</b></u>
+<ruby data-ruby=",AND">
+で、
+</ruby>
+</h2>
+<h2>
+<ruby data-ruby="ENTRANCE FEE IS">
+入場料は
+</ruby>
+<u>無料 FREE</u>
+<ruby data-ruby="">
+です。
+</ruby>
+</h2>
+
+<p class="no_print"><br/><b>※ 開館日は土・日・月曜日のみです。<br/>※※ 火・水・木・金曜日は、アポイントメント制となります。</b></p>
+<p class="no_print"><br/><a href="https://jmty.jp/profiles/5ea2bd1441cf72229dbb0eb3">詳細</a></p>
+</div>
+<p>2019年4月から2022年3月まで、創造的場づくり助成を受け、音ビルで活動した個人／団体が、最後の催しとして、音ビルにて、不用品を無料から提供するバザーを開催します。</p>
 </div>
 </div>
-<div class="contents">
-<p class="click where" onclick="obj=document.getElementById('where').style; obj.display=(obj.display=='none')?'block':'none';">
-どこ？
+<div class="contents no_print">
+<p class="click" onclick="obj=document.getElementById('where').style; obj.display=(obj.display=='none')?'block':'none';">
+行き方
 <span class="symbol">How to Visit</span></p>
-<div id="where" class="more" style="display:none;">
-<h2 class=""><u>〒559-0011</u><br/>大阪市住之江区 <i>北加賀屋</i> ５丁目５−１</h2>
+<div id="where" style="display:none;">
 <iframe src="https://www.youtube.com/embed/bFWiF1AmcfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 class=""><u>〒559-0011</u><br/>大阪市住之江区 <i>北加賀屋</i> ５丁目５−１</h2>
 <h1 class="center"><a href="https://goo.gl/maps/J2EExxKTuQfrfdvMA">Google Map</a></h1>
 </div>
 </div>
@@ -71,8 +131,9 @@ The <u>main room</u> is a room <i>for presentations</i>,
 <hr/>
 <div id="who" class="more">
 <h2 style="text-align:center;">coding / desing / text / video</h2>
-<h1 class="center"><a class="pehu" href="https://creative-community.space/pehu/" target="_blank">∧°┐</a></h1>
-<h1 class="center"><a href="https://chishima-foundation.com/cruising/6-2" target="_blank">助成 <img src="chishima.png"></a></h1>
+<h2 style="text-align:center;"><a class="pehu" href="https://creative-community.space/pehu/" target="_blank">∧°┐</a></h2>
+<br/>
+<h1 style="text-align:center;"><a href="https://chishima-foundation.com/" target="_blank">助成 <img src="chishima.png"></a></h1>
 </div>
 </div>
 </body>

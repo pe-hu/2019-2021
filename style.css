@@ -8,6 +8,7 @@ body {
 a {
     padding:1rem 2.5%;
     color: #fff;
+    border: solid 2px #fff;
     text-decoration: none;
     animation: rolling 2.5s ease infinite;
     background: linear-gradient(0.25turn, #FBDC02, #FC2C7F, #9DFAD7);
@@ -25,6 +26,7 @@ i {
 
 header {
     display: flex;
+    text-align: center;
     width:95%;
     padding:1rem 2.5%;
     color: #fff;
@@ -39,11 +41,11 @@ header b {
 
 #hello {
     position: relative;
-    padding: 5rem 2.5% 0;
+    padding: 2.5rem 2.5% 0;
 }
 #hello .logo {
     position: absolute;
-    top:5rem;
+    top:2rem;
     width: 25%;
     padding: 2.5%;
     max-width: 250px;
@@ -68,9 +70,16 @@ h1 img {
     max-width: 550px;
 }
 
+.main {
+    text-align: center;
+    padding: 1.25rem 0 2.5rem;
+    margin: auto;
+    width: 80%;
+    max-width: 750px;
+}
 .center {
     text-align: center;
-    padding: 7.5rem 0 5rem;
+    padding: 5rem 0 2.5rem;
     margin: auto;
     width: 80%;
     max-width: 625px;
@@ -97,13 +106,51 @@ h1 img {
 }
 .contents iframe {
     width: 100%;
-    height: 75vh;
+    height: 80vh;
     border: solid 2px #000;
     animation: rolling 2.5s ease infinite;
 }
 .contents hr {
     border: none;
-    padding: 2.5rem;
+    padding: 1.25rem;
+}
+.boad {
+    margin:2.5rem auto 7.5rem;
+    width: 90%;
+    max-width: 750px;
+}
+.boad .title {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.boad .title u {
+    display: inline-block;
+    margin: 0;
+    width: 90%;
+    font-size: 200%;
+}
+.boad u {
+    border: solid 2px;
+    text-decoration: none;
+    border-radius: 5rem;
+    padding: 1.25rem;
+}
+.boad ruby {
+  position: relative;
+  line-height: 250%;
+  letter-spacing: 0.2rem;
+}
+.boad [data-ruby]::before {
+  content: attr(data-ruby);
+  position: absolute;
+  top: 2.5rem;
+  left: 0.1rem;
+  margin: auto;
+  font-size: 0.45em;
+  font-weight: 100;
+  line-height: 100%;
+  letter-spacing: 0;
 }
 
 @keyframes rolling {
