@@ -1,0 +1,119 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, YuGothic, sans-serif;
+    font-size: 1.25rem;
+    background: #fff;
+}
+a {
+    padding:1rem 2.5%;
+    color: #fff;
+    text-decoration: none;
+    animation: rolling 2.5s ease infinite;
+    background: linear-gradient(0.25turn, #FBDC02, #FC2C7F, #9DFAD7);
+}
+a:hover {
+    border: solid 2px #000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+i {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 110%;
+    font-weight: 555;
+}
+
+header {
+    display: flex;
+    width:95%;
+    padding:1rem 2.5%;
+    color: #fff;
+    justify-content: space-between;
+    background: linear-gradient(0.25turn, #FBDC02, #FC2C7F, #9DFAD7);
+}
+header b {
+    color: #fff;
+    text-decoration: none;
+    transition: all 1000ms ease;
+}
+
+#hello {
+    position: relative;
+    padding: 5rem 2.5% 0;
+}
+#hello .logo {
+    position: absolute;
+    top:5rem;
+    width: 25%;
+    padding: 2.5%;
+    max-width: 250px;
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+}
+
+h1, h2 {
+    font-weight: 500;
+}
+
+h1 {
+    padding: 0 5%;
+    line-height: 150%;
+}
+h1 img {
+    display: block;
+    float: right;
+    padding: 0.5rem 0 1rem 2.5%;
+    width: 55%;
+    max-width: 550px;
+}
+
+.center {
+    text-align: center;
+    padding: 7.5rem 0 5rem;
+    margin: auto;
+    width: 80%;
+    max-width: 625px;
+}
+
+.contents {
+    margin: auto;
+    width: 90%;
+    max-width: 1250px;
+}
+.contents .click {
+    margin: 1rem auto;
+    padding: 1rem;
+    border: solid 2px;
+    cursor: help;
+    animation: rolling 2.5s ease infinite;
+}
+.contents .click span {
+    float: right;
+    margin-top: 0.35rem;
+}
+.contents .more {
+    padding: 1rem 0 2.5rem;
+}
+.contents iframe {
+    width: 100%;
+    height: 75vh;
+    border: solid 2px #000;
+    animation: rolling 2.5s ease infinite;
+}
+.contents hr {
+    border: none;
+    padding: 2.5rem;
+}
+
+@keyframes rolling {
+  0% {border-radius: 1.5rem 1rem 1rem;}
+  25% {border-radius: 1.5rem 1.5rem 1rem;}
+  50% {border-radius: 1rem 1.5rem 1.5rem;}
+  75% {border-radius: 1rem 1rem 1.5rem;}
+  100% {border-radius: 1.5rem 1rem 1rem;}
+}
+@keyframes gradientBG {
+  0% {background-position: 100% 0%;}
+  50% {background-position: 100% 100%;}
+  100% {background-position: 100% 0%;}
