@@ -81,67 +81,7 @@ The <u>main room</u> is a room <i>for presentations</i>,
 <p class="click when no_print" onclick="obj=document.getElementById('when').style; obj.display=(obj.display=='none')?'block':'none';">
 オープンします。
 <span class="symbol">We're Open</span></p>
-<div id="when" class="more" style="display:;">
-
-<header>
-<span>3.12.2022</span>
-<i>LAST BAZAAR</i>
-<span>3.21.2022</span>
-</header>
-<div class="boad">
-<h2>
-<ruby data-ruby="FORM IS">
-形式は
-</ruby>
-<u>Flea Market</u>
-<ruby data-ruby=",AND">
-で、
-</ruby>
-</h2>
-<h2>
-<ruby data-ruby="EVENT TITLE IS">
-タイトルは
-</ruby>
-</h2>
-<h2 class="title"><u>ラスト・バザー</u></h2>
-<h2 style="text-align:right;">です。</h2>
-
-<h2>
-<ruby data-ruby="FROM">
-時間は
-</ruby>
-<u>12:00</u>
-<ruby data-ruby="TO">
-から
-</ruby>
-<u>18:00</u>
-<ruby data-ruby=",WE OPEN.">
-まで　
-</ruby>
-</h2>
-<h2>
-<ruby data-ruby="PLACE IS">
-場所は
-</ruby>
-<u><b>β room</b></u>
-<ruby data-ruby=",AND">
-で、
-</ruby>
-</h2>
-<h2>
-<ruby data-ruby="ENTRANCE FEE IS">
-入場料は
-</ruby>
-<u>無料 FREE</u>
-<ruby data-ruby="">
-です。
-</ruby>
-</h2>
-
-<p><br/><b>※ 開館日は土・日・月曜日のみです。<br/>※※ 火・水・木・金曜日は、アポイントメント制となります。</b></p>
-<p class="no_print"><br/><a href="goodbye.html">詳細</a></p>
-</div>
-</div>
+<div id="when" class="more" style="display:none;"></div>
 </div>
 <div class="contents no_print">
 <p class="click" onclick="obj=document.getElementById('where').style; obj.display=(obj.display=='none')?'block':'none';">
@@ -155,7 +95,7 @@ The <u>main room</u> is a room <i>for presentations</i>,
 </div>
 <div class="contents no_print">
 <p class="click" onclick="obj=document.getElementById('who').style; obj.display=(obj.display=='none')?'block':'none';">
-これまでの活動
+活動報告
 <span class="symbol">2019 - 2021</span></p>
 <div id="who" style="display:none;">
 
@@ -230,6 +170,12 @@ The <u>main room</u> is a room <i>for presentations</i>,
 <br/>
 <h1 style="text-align:center;"><a href="https://chishima-foundation.com/" target="_blank">助成 <img src="chishima.png"></a></h1>
 </div>
-</div>
+</div><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+  $("#when").load("archive.html");
+})
+</script>
 </body>
 </html>
