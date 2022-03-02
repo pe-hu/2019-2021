@@ -1,0 +1,69 @@
+.text {
+  line-height:200%;
+  padding:0 1rem;
+  margin: 1rem 0.5rem;
+}
+.half {
+  line-height:200%;
+  padding:1.25% 0;
+  width:50%;
+  float:left;
+  margin: 1rem 0 0;
+}
+.text a,
+.half a {
+  text-align:center;
+  display:block;
+  margin:0.25rem 0;
+}
+.text a:hover,
+.half a:hover {
+  filter: invert(0.15);
+}
+.text a,
+.mousedragscrollable b,
+.half a,
+.half b {
+  padding:0.25rem 1rem;
+  border-radius:1.5rem;
+  text-decoration:none;
+}
+.mousedragscrollable b,
+.half b {
+  padding:0.25rem 1rem;
+  border-radius:1.5rem;
+}
+.text i,
+.half i {
+  padding:0.5rem;
+}
+.text u,
+.half u {
+  text-decoration:0;
+  font-size:95%;
+  padding:0 0.2rem 0.2rem;
+  border-bottom:solid 0.2rem;
+}
+
+
+.mousedragscrollable {
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+  overflow: auto;
+  scroll-snap-type: x;
+}
+.mousedragscrollable>* {
+  display: inline-block;
+  white-space: normal;
+}
+.mousedragscrollable li{
+  list-style: none;
+  padding: 0 2.5%;
+  margin: 0;
+  height: 75vh;
+  width: 80%;
+  max-width: 40rem;
+  overflow: auto;
+}
+.mousedragscrollable img {width: 100%;}
