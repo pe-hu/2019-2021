@@ -10,6 +10,37 @@
 <link rel="stylesheet" href="stylesheet.css"/>
 <style>
 .pehu {font-family: "MS Mincho", "SimSong", serif;}
+
+@media screen and (max-width: 750px){
+    body {
+    font-size: 3vw;
+}
+    h1 {
+    font-size: 5.5vw;
+}
+    h2 {
+    font-size: 3.75vw;
+}
+.boad [data-ruby]::before {
+  content: attr(data-ruby);
+  position: absolute;
+  top: 5vw;
+  left: 0.25vw;
+  margin: auto;
+  font-size: 0.75vw;
+  font-weight: 100;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+.boad u {
+    padding: 3.33vw;
+}
+}
+
+@media print{
+.no_print
+{display:none;}
+
 </style>
 </head>
  
