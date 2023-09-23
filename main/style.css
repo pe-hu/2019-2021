@@ -55,8 +55,7 @@ article h1 {
     place-items: center;
 }
 
-details,
-nav {
+body {
     font-family: Arial, "YuGothic", sans-serif;
 }
 
