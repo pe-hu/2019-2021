@@ -11,6 +11,8 @@ hr {
 body {
     padding: 0;
     margin: 0;
+    height: 100vh;
+    max-height: -webkit-fill-available;
 }
 
 * {
@@ -84,7 +86,6 @@ header {
 @media screen and (min-width: 1000px) {
     body {
         flex-flow: row-reverse wrap;
-        height: 100vh;
     }
 
     nav,
@@ -102,7 +103,6 @@ header {
 
     body {
         flex-flow: column;
-        max-height: -webkit-fill-available;
     }
 
     nav,
