@@ -9,8 +9,8 @@
             "close": "18:00",
             "at": "β room",
             "entrance": "無料 FREE",
-            "more": true,
-            "link": "#",
+            "more": false,
+            "link": "../goodbye",
             "by": "∧°┐"
         },
         {
@@ -178,8 +178,8 @@
             "close": "18:00",
             "at": "β room",
             "entrance": "FREE",
-            "more": true,
-            "link": "#",
+            "more": false,
+            "link": "../beta/",
             "by": "∧°┐"
         },
         {
