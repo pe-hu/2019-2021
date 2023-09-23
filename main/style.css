@@ -91,7 +91,7 @@ header {
     #main,
     #info {
         overflow: auto;
-        height: calc(100% - 3.21rem);
+        height: calc(100% - 3.5rem);
     }
 }
 
