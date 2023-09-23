@@ -20,8 +20,9 @@ body,
 }
 
 body {
-    height: 100vh;
     flex-flow: column;
+    height: 100vh;
+    max-height: -webkit-fill-available;
 }
 
 main {
