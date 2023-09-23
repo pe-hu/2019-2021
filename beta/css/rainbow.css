@@ -1,0 +1,65 @@
+.rainbow span:nth-child(7n+1) {
+    color: red;
+    animation: rainbow 7s step-start infinite;
+    animation-delay: -1s;
+}
+
+.rainbow span:nth-child(7n+2) {
+    color: orange;
+    animation: rainbow 7s step-start infinite;
+    animation-delay: -2s;
+}
+
+.rainbow span:nth-child(7n+3) {
+    color: yellow;
+    animation: rainbow 7s step-start infinite;
+    animation-delay: -3s;
+}
+
+.rainbow span:nth-child(7n+4) {
+    color: green;
+    animation: rainbow 7s step-start infinite;
+    animation-delay: -4s;
+}
+
+.rainbow span:nth-child(7n+5) {
+    color: skyblue;
+    animation: rainbow 7s step-start infinite;
+    animation-delay: -5s;
+}
+
+.rainbow span:nth-child(7n+6) {
+    color: blue;
+    animation: rainbow 7s step-start infinite;
+    animation-delay: -6s;
+}
+
+.rainbow span:nth-child(7n+7) {
+    color: purple;
+    animation: rainbow 7s step-start infinite;
+    animation-delay: -7s;
+}
+
+@keyframes rainbow {
+    14% {
+        color: red;
+    }
+    28.2% {
+        color: orange;
+    }
+    42.4% {
+        color: yellow;
+    }
+    56.5% {
+        color: green;
+    }
+    70.6% {
+        color: skyblue;
+    }
+    84.8% {
+        color: blue;
+    }
+    100% {
+        color: purple;
+    }
+}

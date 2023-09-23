@@ -20,6 +20,7 @@ function projects(obj) {
         `
         nav.appendChild(projectP);
         projectP.addEventListener('click', function () {
+            document.body.className = "open"
             document.querySelector('#form').textContent = project.form
             document.querySelector('#title').textContent = project.title
             document.querySelector('#open').textContent = project.open
@@ -29,8 +30,13 @@ function projects(obj) {
             const moreinfo = document.querySelector('#link');
             moreinfo.hidden = project.more
             moreinfo.href = project.link
+            moreinfo.textContent = "More Info"
             moreinfo.setAttribute('target','_blank')
             document.querySelector('#by').textContent = project.by
         });
     }
 }
+
+function articleClose() {
+    document.body.classList.remove("open")
+};

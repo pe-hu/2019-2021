@@ -1,5 +1,11 @@
 html {
     font-size: 16px;
+    height: -webkit-fill-available;
+}
+
+hr {
+    border: none;
+    margin: 2rem;
 }
 
 body {
@@ -12,11 +18,11 @@ body {
 }
 
 a,
-#header,
-nav p:not(#header):hover {
+header,
+nav p:hover {
     background: linear-gradient(0.25turn, #FBDC02, #FC2C7F, #9DFAD7);
     color: #fff;
-    padding: 1rem;
+    cursor: pointer;
 }
 
 a {
@@ -25,14 +31,18 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    border: solid 2px #000;
+a:hover,
+header:hover {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+a:hover {
+    border: solid 2px #000;
+}
+
 body,
-#header,
+header,
 nav p {
     display: flex;
     justify-content: space-between;
@@ -48,22 +58,24 @@ nav {
     font-family: Arial, "YuGothic", sans-serif;
 }
 
-nav {
+nav,
+#info {
     width: calc(100% - 550px);
 }
 
-article {
+#main {
     width: 550px;
 }
 
-#header,
+a,
+header,
 nav p,
 article {
     padding: 1rem;
     margin: 0;
 }
 
-#header {
+header {
     position: sticky;
     top: 0;
     width: 100%;
@@ -76,7 +88,8 @@ article {
     }
 
     nav,
-    article {
+    #main,
+    #info {
         overflow: auto;
         height: calc(100% - 4rem);
     }
@@ -84,21 +97,42 @@ article {
 
 @media screen and (max-width: 1000px) {
     html {
-        font-size: 3vw;
+        font-size: 2.75vw;
     }
 
     body {
         flex-flow: column;
+        max-height: -webkit-fill-available;
     }
 
     nav,
-    article {
+    article,
+    #info {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
-    article {
+    #main {
         display: none;
+    }
+
+    body.open #main {
+        background: #fff;
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: auto;
+        width: 95%;
+        height: 95%;
+        z-index: 1;
+    }
+
+    body.open #main::after {
+        content: '×';
+        float: right;
+        font-size: 200%;
     }
 }
 
@@ -106,16 +140,16 @@ article h1 {
     font-size: 200%;
 }
 
-article h2,
-article h3,
-article p,
-#header {
+#main h2,
+#main h3,
+#main p,
+header {
     font-size: 125%;
 }
 
-article h1,
-article h2,
-article h3 {
+h1,
+h2,
+h3 {
     font-weight: 500;
 }
 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!--og:meta-->
+    <meta content="website" property="og:type">
+    <title>✌︎ for 未来</title>
+    <meta content="✌︎ for 未来" property="og:title">
+    <meta content="1.5.2020 1PM-6PM @ OTO building | あなたの場をより快適にするための場" name="description">
+    <meta content="1.5.2020 1PM-6PM @ OTO building | あなたの場をより快適にするための場" name="og:description">
+
+    <!--for Twitter-->
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="https://vg.pe.hu/2019-2021/beta/" property="og:url">
+    <meta content="https://vg.pe.hu/2019-2021/beta/card.jpeg" property="og:image">
+    <meta content="https://vg.pe.hu/2019-2021/beta/card.jpeg" name="twitter:image:src">
+
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/sky.css" />
+    <link rel="stylesheet" href="css/rainbow.css" />
+
+    <style>
+        @media print {
+            header {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="sky">
+    <header>
+        <button class="rainbow" type="button">
+            <span>i</span>
+        </button>
+    </header>
+    <main id="main">
+        <h1>
+            Peace for Future<br />
+            <small class="rainbow">あなたの場をより快適にするための場</small>
+        </h1>
+        <marquee behavior="alternate" direction="down">Think<br>思考</marquee>
+        <marquee behavior="alternate" direction="up">Organize<br>整理</marquee>
+        <marquee behavior="alternate" direction="down">Communication<br>交流</marquee>
+        <marquee behavior="alternate" direction="up">Creation<br>制作</marquee>
+        <marquee behavior="alternate" direction="down">Refrash<br>休憩</marquee>
+    </main>
+    <main id="infomation" hidden></main>
+
+    <footer id="footer">
+        <marquee behavior="scroll" direction="left"></marquee>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/weather.js"></script>
+    <script>
+        $("small.rainbow").children().addBack().contents().each(function () {
+            if (this.nodeType == 3) {
+                var $this = $(this);
+                $this.replaceWith($this.text().replace(/(\S)/g, "<span>$&</span>"));
+            }
+        });
+    </script>
+    <script>
+        let btn = document.querySelector('header button');
+        btn.addEventListener('click', function () {
+            changeMain()
+        }, false);
+
+        function changeMain() {
+            const mainAll = document.querySelectorAll('main');
+            mainAll.forEach(main => {
+                if (main.hidden == false) {
+                    main.hidden = true;
+                    main.style.display = "none";
+                } else {
+                    main.hidden = false;
+                    main.style.display = "flex";
+                }
+            })
+        }
+
+        async function fetchHTML(url = '', query = '') {
+            fetch(url)
+                .then(response => response.text())
+                .then(html => {
+                    document.querySelector(query).innerHTML = html
+                });
+        }
+
+        fetchHTML('infomation.html', '#infomation')
+    </script>
+</body>
+
+</html>

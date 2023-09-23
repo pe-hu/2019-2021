@@ -26,6 +26,12 @@ main u:hover,
     cursor: pointer;
 }
 
+header:hover,
+button:hover {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 body,
 .button {
     display: grid;
