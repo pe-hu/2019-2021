@@ -59,13 +59,13 @@ footer {
 }
 
 #hello {
-    background-image: url('../img/cover.jpg');
+    background-image: url('img/cover.jpg');
     background-position: right 2rem bottom;
     background-size: auto;
 }
 
 #main {
-    background-image: url('../img/main.jpg');
+    background-image: url('img/main.jpg');
     background-position: right 2rem top 2rem;
     background-size: 50%;
 }
