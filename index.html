@@ -8,187 +8,79 @@
 
     <!--og:meta-->
     <meta content="website" property="og:type">
-    <title>音ビル | 2019 - 2021</title>
-    <meta content="音ビル | 2019 - 2021" property="og:title">
-    <meta content="音ビル 2階 は、おおさか創造千島財団による創造的場づくり助成を獲得した個人／団体が共同運営するシェアスタジオです。" name="description">
-    <meta content="音ビル 2階 は、おおさか創造千島財団による創造的場づくり助成を獲得した個人／団体が共同運営するシェアスタジオです。" name="og:description">
+    <title>音ビル | OTO Building</title>
+    <meta content="音ビル | OTO Building" property="og:title">
+    <meta content="4.11.2019 - 3.30.2022 | あなたの場をより快適にするための場" name="description">
+    <meta content="4.11.2019 - 3.30.2022 | あなたの場をより快適にするための場" name="og:description">
+    <script src="projects/index.js"></script>
+    <script>
+        document.addEventListener('readystatechange', event => {
+            if (event.target.readyState === 'interactive') {
+                whoJSON('projects/index.json')
+            }
+        })
+    </script>
 
     <!--for Twitter-->
     <meta content="summary_large_image" name="twitter:card">
     <meta content="https://vg.pe.hu/jp/2019-2021/" property="og:url">
-    <meta content="https://vg.pe.hu/jp/2019-2021/icon/cover.png" property="og:image">
-    <meta content="https://vg.pe.hu/jp/2019-2021/icon/cover.png" name="twitter:image:src">
+    <meta content="https://vg.pe.hu/jp/2019-2021/img/cover.jpg" property="og:image">
+    <meta content="https://vg.pe.hu/jp/2019-2021/img/cover.jpg" name="twitter:image:src">
 
-    <!--Icons-->
-    <link rel="icon" href="icon/favicon.png" type="image/png">
-    <link rel="icon" href="icon/android.png" sizes="192x192" type="image/png">
-    <link rel="apple-touch-icon-precomposed" href="icon/ios.png" sizes="180x180" type="image/png">
-<link rel="stylesheet" href="stylesheet.css"/>
-<style>
-.pehu {font-family: "MS Mincho", "SimSong", serif;}
-@media screen and (max-width: 750px){
-    body {
-    font-size: 3vw;
-}
-    h1 {
-    font-size: 5.5vw;
-}
-    h2 {
-    font-size: 3.75vw;
-}
-.boad [data-ruby]::before {
-  content: attr(data-ruby);
-  position: absolute;
-  top: 5vw;
-  left: 0.25vw;
-  margin: auto;
-  font-size: 0.75vw;
-  font-weight: 100;
-  line-height: 100%;
-  letter-spacing: 0;
-}
-.boad u {
-    padding: 3.33vw;
-}
-}
-
-@media print{
-.no_print
-{display:none;}
-</style>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
 </head>
- 
+
 <body>
-<header>
-<span>4.2.2019</span>
-<b>あなたの場をより快適にするための場</b>
-<span>3.30.2022</span>
-</header>
+    <header>
+        <time>4.2.2019</time>
+        <strong>あなたの場をより快適にするための場</strong>
+        <time>3.30.2022</time>
+    </header>
+    <main id="hello">
+        <img class="logo" src="img/logo.png" alt="音ビル ロゴ デザイン:金氏徹平">
+        <h1>
+            <u onclick="changeMain()">音ビル２階</u>
+            は、おおさか創造千島財団による創造的場づくり助成を獲得した個人／団体が共同運営するシェアスタジオでした。
+        </h1>
+        <h2>
+            <u onclick="changeMain()">OTO Building 2F</u>
+            was a
+            <i>share studio</i>
+            operated cooperatively by individuals/groups
+            who obtained Grant for the cultivation of a creative place and environment.
+        </h2>
+    </main>
+    <main id="main" hidden>
+        <h3>There are <i>two rooms</i> here.</h3>
+        <h3>
+            The <u onClick="window.open('main/', '_self')">main room</u> is<br>
+            a room <i>for presentations</i>,<br>
+            and the other is a room
+            <i>for planning and enriching new ideas</i>
+            for comfortable presentations in the main room,
+            called the
+            <u onClick="window.open('beta/welcome.pdf', '_blank')">β room</u>.
+        </h3>
+        <hr>
+        <p>音ビル2階には、2つの部屋があります。</p>
+        <p>
+            1つは、「発表」を行うためのメインルーム。<br />
+            もう1つは、メインルームでの「発表」のために、新しいアイデアを計画し準備する部屋です。
+        </p>
+        <button type="button" class="button" onclick="changeMain()">←</button>
+    </main>
+    <footer>
+        <button type="button" onclick="onModal()">助成</button>
+        <img src="img/chishima.png">
+    </footer>
 
-<div id="hello">
-<img class="logo" src="logo.png">
-<h2 class="center"><u>音ビル２階</u> は、おおさか創造千島財団による創造的場づくり助成を獲得した個人／団体が共同運営するシェアスタジオでした。</h2>
-<br/>
-<h1><u>OTO Building 2F</u> was a <i>share studio</i> operated cooperatively by individuals/groups 
-who obtained Grant for the cultivation of a creative place and environment.</h1>
-<p class="main"><img src="000.jpg" width="100%"></p>
+    <dialog id="modal">
+        <button type="button" id="closeBtn" class="button">×</button>
+        <h3>創造的場づくり助成</h3>
+    </dialog>
 
-<br/>
-<div class="contents">
-<p class="click why" onclick="obj=document.getElementById('what').style; obj.display=(obj.display=='none')?'block':'none';">
-音ビル２階
-<span class="symbol">OTO Building 2F</span></p>
-<div id="what" class="more" style="display:none;">
-<h1>There are <i>two rooms</i> here.</h1>
-<h1><img src="main.jpg">
-The <u>main room</u> is a room <i>for presentations</i>,
-<br/>and the other is a room <i>for planning and enriching new ideas</i> for comfortable presentations in the main room, called the <u>β room</u>.</h1>
-<hr/>
-<h2>音ビル2階には、2つの部屋があります。</h2>
-<h2>1つは、「発表」を行うためのメインルーム。<br/>
-もう1つは、メインルームでの「発表」のために、新しいアイデアを計画し準備する部屋です。</h2>
-<p class="no_print" style="text-align:center;"><a href="oto_building.pdf">音ビル図面</a></p>
-<h2 class="no_print"><iframe src="oto_building.pdf"></iframe></h2>
-</div>
-</div>
-<div class="contents no_print">
-<p class="click" onclick="obj=document.getElementById('who').style; obj.display=(obj.display=='none')?'block':'none';">
-活動内容
-<span class="symbol">2019 - 2021</span></p>
-<div id="who" style="display:none;">
-
-<header>
-<span>∧°┐</span>
-<i>やりたいことを快適に実現するための方法</i>
-<a href="https://chishima-foundation.com/past-grant-projects/pe-hu-2021">2021</a>
-</header>
-<header>
-<span>TRA-TRAVEL</span>
-<i>（仮）ポストLCC時代の大阪、ツアー会社型アートハブによる文化動線整備</i>
-<a href="https://chishima-foundation.com/past-grant-projects/tra-travel-2021">2021</a>
-</header>
-<header>
-<span>FOLK old book store</span>
-<i>書店及びギャラリー経営</i>
-<a href="https://chishima-foundation.com/past-grant-projects/folk-old-book-store-2021">2021</a>
-</header>
-<header>
-<span>∧°┐</span>
-<i>やりたいことを快適に実現するための方法</i>
-<a href="https://chishima-foundation.com/past-grant-projects/pe-fu-2020">2020</a>
-</header>
-<header>
-<span>TRA-TRAVEL</span>
-<i>ポストLCC時代の大阪、ツアー会社型アートハブによる文化動線整備</i>
-<a href="https://chishima-foundation.com/past-grant-projects/tra-travel-2020">2020</a>
-</header>
-<header>
-<span>FOLK old book store</span>
-<i>書店及びギャラリー経営</i>
-<a href="https://chishima-foundation.com/past-grant-projects/folk-old-book-store-2020">2020</a>
-</header>
-<header>
-<span>よしおかさんち</span>
-<i>千のおうち</i>
-<a href="https://chishima-foundation.com/past-grant-projects/sen-no-ouchi-2020">2020</a>
-</header>
-<header>
-<span>∧°┐</span>
-<i>creative, community space</i>
-<a href="https://chishima-foundation.com/past-grant-projects/pe-fu-2019">2019</a>
-</header>
-<header>
-<span>TRA-TRAVEL</span>
-<i>ポストLCC時代の大阪、ツアー会社型アートハブによる文化動線整備</i>
-<a href="https://chishima-foundation.com/past-grant-projects/tra-travel-2019">2019</a>
-</header>
-<header>
-<span>FOLK old book store</span>
-<i>書店及びギャラリー経営</i>
-<a href="https://chishima-foundation.com/past-grant-projects/folk-old-book-store-2019">2019</a>
-</header>
-<header>
-<span>前田文化</span>
-<i>前田文化2019-2021</i>
-<a href="https://chishima-foundation.com/past-grant-projects/maedabunka_2019-2021">2019</a>
-</header>
-<header>
-<span>よしおかさんち</span>
-<i>千のおうち</i>
-<a href="https://chishima-foundation.com/past-grant-projects/sen-no-ouchi-2019">2019</a>
-</header>
-</div>
-</div>
-<div class="contents">
-<p class="click when no_print" onclick="obj=document.getElementById('when').style; obj.display=(obj.display=='none')?'block':'none';">
-イベント一覧
-<span class="symbol">We were Opened</span></p>
-<div id="when" class="more" style="display:none;"></div>
-</div>
-<div class="contents no_print">
-<p class="click" onclick="obj=document.getElementById('where').style; obj.display=(obj.display=='none')?'block':'none';">
-行き方
-<span class="symbol">How to Visit</span></p>
-<div id="where" style="display:none;">
-<iframe src="https://www.youtube.com/embed/bFWiF1AmcfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h2 class=""><u>〒559-0011</u><br/>大阪市住之江区 <i>北加賀屋</i> ５丁目５−１</h2>
-<h1 class="center"><a href="https://goo.gl/maps/J2EExxKTuQfrfdvMA">Google Map</a></h1>
-</div>
-</div>
-<div class="contents">
-<hr/>
-<div class="more">
-<h2 style="text-align:center;">coding / desing / text / video</h2>
-<h2 style="text-align:center;"><a class="pehu" href="https://creative-community.space/pehu/" target="_blank">∧°┐</a></h2>
-<br/>
-<h1 style="text-align:center;"><a href="https://chishima-foundation.com/" target="_blank">助成 <img src="chishima.png"></a></h1>
-</div>
-</div><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-
-$(function(){
-  $("#when").load("archive.html");
-})
-</script>
+    <script src="script.js"></script>
 </body>
+
 </html>

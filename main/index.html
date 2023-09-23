@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('readystatechange', event => {
+            if (event.target.readyState === 'interactive') {
+                whenJSON('index.json')
+            }
+        })
+    </script>
+
+    <!--og:meta-->
+    <meta content="website" property="og:type">
+    <title>音ビル | OTO Building</title>
+    <meta content="音ビル | OTO Building" property="og:title">
+    <meta content="4.11.2019 - 3.30.2022 | あなたの場をより快適にするための場" name="description">
+    <meta content="4.11.2019 - 3.30.2022 | あなたの場をより快適にするための場" name="og:description">
+
+    <!--for Twitter-->
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="https://vg.pe.hu/jp/2019-2021/main/" property="og:url">
+    <meta content="https://vg.pe.hu/jp/2019-2021/img/cover.jpg" property="og:image">
+    <meta content="https://vg.pe.hu/jp/2019-2021/img/cover.jpg" name="twitter:image:src">
+
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <p id="header">
+        <strong>We were Opened</strong>
+        <small>イベント一覧</small>
+    </p>
+    <nav></nav>
+    <article>
+        <p>
+            <ruby data-ruby="FORM IS">
+                形式は
+            </ruby>
+            <u id="form">創造的場づくり助成</u>
+            <ruby data-ruby=",AND">
+                で、
+            </ruby>
+        </p>
+        <p>
+            <ruby data-ruby="EVENT TITLE IS">
+                タイトルは
+            </ruby>
+        </p>
+        <h1 id="title">あなたの場をより快適にするための場</h1>
+        <p style="text-align:right;">です。</p>
+        <h2>
+            <ruby data-ruby="FROM">
+                時間は
+            </ruby>
+            <time id="open">4.11.2019</time>
+            <ruby data-ruby="TO">
+                から
+            </ruby>
+            <time id="close">3.30.2022</time>
+            <ruby data-ruby=",WE OPEN.">
+                まで
+            </ruby>
+        </h2>
+        <h3>
+            <ruby data-ruby="PLACE IS">
+                場所は
+            </ruby>
+            <u><b id="at">OTO Building</b></u>
+            <ruby data-ruby=",AND">
+                で、
+            </ruby>
+        </h3>
+        <h3>
+            <ruby data-ruby="ENTRANCE FEE IS">
+                入場料は
+            </ruby>
+            <u id="entrance">Free</u>
+            <ruby data-ruby="">
+                です。
+            </ruby>
+        </h3>
+        <br />
+        <p>
+            <a id="link" href="#">More Info</a>
+        </p>
+        <br />
+        <p>
+            <small>企画 <strong id="by">おおさか創造千島財団</strong></small>
+        </p>
+    </article>
+</body>
+
+</html>

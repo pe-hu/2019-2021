@@ -1,0 +1,162 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a,
+#header,
+nav p:not(#header):hover {
+    background: linear-gradient(0.25turn, #FBDC02, #FC2C7F, #9DFAD7);
+    color: #fff;
+    padding: 1rem;
+}
+
+a {
+    border: solid 2px #fff;
+    border-radius: 2.5rem;
+    text-decoration: none;
+}
+
+a:hover {
+    border: solid 2px #000;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body,
+#header,
+nav p {
+    display: flex;
+    justify-content: space-between;
+}
+
+article h1 {
+    display: grid;
+    place-items: center;
+}
+
+details,
+nav {
+    font-family: Arial, "YuGothic", sans-serif;
+}
+
+nav {
+    width: calc(100% - 550px);
+}
+
+article {
+    width: 550px;
+}
+
+#header,
+nav p,
+article {
+    padding: 1rem;
+    margin: 0;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        flex-flow: row-reverse wrap;
+        height: 100vh;
+    }
+
+    nav,
+    article {
+        overflow: auto;
+        height: calc(100% - 4rem);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 3vw;
+    }
+
+    body {
+        flex-flow: column;
+    }
+
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+
+    article {
+        display: none;
+    }
+}
+
+article h1 {
+    font-size: 200%;
+}
+
+article h2,
+article h3,
+article p,
+#header {
+    font-size: 125%;
+}
+
+article h1,
+article h2,
+article h3 {
+    font-weight: 500;
+}
+
+article h1 {
+    margin: 2rem 1rem 1rem;
+}
+
+article h2,
+article h3,
+article p {
+    margin: 1rem;
+}
+
+article u,
+article time {
+    display: inline-block;
+    text-decoration: none;
+}
+
+article h1,
+article u,
+article time {
+    border: solid 2px;
+    border-radius: 5rem;
+    padding: 1rem;
+}
+
+article ruby {
+    position: relative;
+    line-height: 250%;
+    letter-spacing: 0.25rem;
+}
+
+article [data-ruby]::before {
+    content: attr(data-ruby);
+    position: absolute;
+    top: 1.75rem;
+    left: 0.1rem;
+    margin: auto;
+    font-size: 50%;
+    font-weight: 100;
+    line-height: 100%;
+    letter-spacing: 0;
+}
