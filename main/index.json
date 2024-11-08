@@ -9,8 +9,7 @@
             "close": "18:00",
             "at": "β room",
             "entrance": "無料 FREE",
-            "more": false,
-            "link": "../goodbye",
+            "project": "goodbye",
             "by": "∧°┐"
         },
         {
@@ -22,7 +21,6 @@
             "close": "18:00",
             "at": "main room",
             "entrance": "無料 FREE",
-            "more": false,
             "link": "https://www.facebook.com/events/730124197974812/",
             "by": "TRA-TRAVEL"
         },
@@ -35,7 +33,6 @@
             "close": "18:00",
             "at": "main room",
             "entrance": "自由料金制",
-            "more": false,
             "link": "http://vg.pe.hu/1f/book/",
             "by": "∧°┐"
         },
@@ -48,7 +45,6 @@
             "close": "22:00 - 5:00",
             "at": "main room",
             "entrance": "無料",
-            "more": false,
             "link": "https://www.instagram.com/p/CX_QOtKlHkh/",
             "by": "∧°┐"
         },
@@ -61,8 +57,7 @@
             "close": "21:00",
             "at": "main room",
             "entrance": "無料",
-            "more": false,
-            "link": "https://www.instagram.com/p/CX3mVZKPZtM/",
+            "link": null,
             "by": "∧°┐"
         },
         {
@@ -74,8 +69,7 @@
             "close": "20:00",
             "at": "main room",
             "entrance": "自由料金制",
-            "more": false,
-            "link": "https://creative-community.space/sp/",
+            "link": null,
             "by": "∧°┐"
         },
         {
@@ -87,8 +81,7 @@
             "close": "19:00",
             "at": "1F と main room",
             "entrance": "自由料金制",
-            "more": true,
-            "link": "#",
+            "link": null,
             "by": "∧°┐"
         },
         {
@@ -100,8 +93,7 @@
             "close": "17:00",
             "at": "main room",
             "entrance": "無料",
-            "more": false,
-            "link": "https://www.instagram.com/p/CLJpM2nDn5n/",
+            "link": null,
             "by": "∧°┐"
         },
         {
@@ -113,8 +105,7 @@
             "close": "19:00",
             "at": "main room と β room",
             "entrance": "自由料金制",
-            "more": true,
-            "link": "#",
+            "link": null,
             "by": "∧°┐"
         },
         {
@@ -126,8 +117,7 @@
             "close": "19:00",
             "at": "β room",
             "entrance": "1000円",
-            "more": true,
-            "link": "#",
+            "link": null,
             "by": "∧°┐"
         },
         {
@@ -139,8 +129,7 @@
             "close": "18:00",
             "at": "main room",
             "entrance": "無料",
-            "more": true,
-            "link": "#",
+            "link": null,
             "by": "∧°┐"
         },
         {
@@ -152,8 +141,7 @@
             "close": "17:00",
             "at": "main room",
             "entrance": "無料",
-            "more": false,
-            "link": "https://www.instagram.com/p/CEHF2_-D6fn/",
+            "link": null,
             "by": "∧°┐"
         },
         {
@@ -165,7 +153,6 @@
             "close": "18:00",
             "at": "main room",
             "entrance": "無料",
-            "more": false,
             "link": "https://www.facebook.com/events/4344725488887074/",
             "by": "TRA-TRAVEL"
         },
@@ -178,7 +165,6 @@
             "close": "18:00",
             "at": "β room",
             "entrance": "FREE",
-            "more": false,
             "link": "../beta/",
             "by": "∧°┐"
         },
@@ -191,7 +177,6 @@
             "close": "未定",
             "at": "1F, main room & β room",
             "entrance": "無料",
-            "more": false,
             "link": "https://surround-circuit.web.app/",
             "by": "∧°┐"
         },
@@ -204,7 +189,6 @@
             "close": "21:00",
             "at": "1F & main room",
             "entrance": "3000円",
-            "more": false,
             "link": "https://paperc.info/event/304",
             "by": "FOLK old book store"
         },
@@ -217,7 +201,6 @@
             "close": "??:??",
             "at": "main room & β room",
             "entrance": "招待制",
-            "more": false,
             "link": "https://s-e-n-n.jp/project/Project_Outdoorofindoortype",
             "by": "よしおかさんち"
         }

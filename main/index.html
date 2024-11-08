@@ -5,13 +5,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
-    <script src="script.js"></script>
+    <script src="when.js"></script>
     <script>
-        document.addEventListener('readystatechange', event => {
-            if (event.target.readyState === 'interactive') {
-                whenJSON('index.json')
+        const params = new URLSearchParams(location.search);
+        if (location.search) {
+            if (params.get("project")) {
+                projectJSON('../project/' + params.get("project") + '.json')
             }
-        })
+        } else {
+            whenJSON('index.json');
+        };
     </script>
 
     <!--og:meta-->
@@ -28,73 +31,78 @@
     <meta content="https://vg.pe.hu/2019-2021/img/cover.jpg" name="twitter:image:src">
 
     <link rel="icon" href="../img/favicon.png" type="image/png">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="img.css" />
 </head>
 
 <body>
-    <header onClick="history.back()">
-        <time>4.2.2019</time>
+    <header onclick="history.back()">
+        <time id="start">4.2.2019</time>
         <strong>OTO Building</strong>
-        <time>3.30.2022</time>
+        <time id="end">3.30.2022</time>
     </header>
-    <nav></nav>
-    <article id="main" onclick="articleClose()">
-        <p>
-            <ruby data-ruby="FORM IS">
-                形式は
-            </ruby>
-            <u id="form">創造的場づくり助成</u>
-            <ruby data-ruby=",AND">
-                で、
-            </ruby>
-        </p>
-        <p>
-            <ruby data-ruby="EVENT TITLE IS">
-                タイトルは
-            </ruby>
-        </p>
-        <h1 id="title">あなたの場をより快適にするための場</h1>
-        <p style="text-align:right;">です。</p>
-        <h2>
-            <ruby data-ruby="FROM">
-                時間は
-            </ruby>
-            <time id="open">4.11.2019</time>
-            <ruby data-ruby="TO">
-                から
-            </ruby>
-            <time id="close">3.30.2022</time>
-            <ruby data-ruby=",WE OPEN.">
-                まで
-            </ruby>
-        </h2>
-        <h3>
-            <ruby data-ruby="PLACE IS">
-                場所は
-            </ruby>
-            <u><b id="at">音ビル</b></u>
-            <ruby data-ruby=",AND">
-                で、
-            </ruby>
-        </h3>
-        <h3>
-            <ruby data-ruby="ENTRANCE FEE IS">
-                入場料は
-            </ruby>
-            <u id="entrance">未定</u>
-            <ruby data-ruby="">
-                です。
-            </ruby>
-        </h3>
-        <br />
-        <p>
-            <a id="link" href="../">戻る</a>
-        </p>
-        <br />
-        <p>
-            <small>企画 <strong id="by">∧°┐</strong></small>
-        </p>
+    <article>
+        <section>
+            <p>
+                <ruby data-ruby="FORM IS">
+                    形式は
+                </ruby>
+                <u id="form">創造的場づくり助成</u>
+                <ruby data-ruby=",AND">
+                    で、
+                </ruby>
+            </p>
+            <p>
+                <ruby data-ruby="EVENT TITLE IS">
+                    タイトルは
+                </ruby>
+            </p>
+            <h1 id="title">
+                <b>あなたの場をより快適にするための場</b>
+            </h1>
+            <p style="text-align:right;">です。</p>
+            <h2>
+                <ruby data-ruby="FROM">
+                    時間は
+                </ruby>
+                <time id="open">4.11.2019</time>
+                <ruby data-ruby="TO">
+                    から
+                </ruby>
+                <time id="close">3.30.2022</time>
+                <ruby data-ruby=",WE OPEN.">
+                    まで
+                </ruby>
+            </h2>
+            <h3>
+                <ruby data-ruby="PLACE IS">
+                    場所は
+                </ruby>
+                <u><b id="at">音ビル</b></u>
+                <ruby data-ruby=",AND">
+                    で、
+                </ruby>
+            </h3>
+            <h3>
+                <ruby data-ruby="ENTRANCE FEE IS">
+                    入場料は
+                </ruby>
+                <u id="entrance">未定</u>
+                <ruby data-ruby="">
+                    です。
+                </ruby>
+            </h3>
+            <br />
+            <p>
+                <small>
+                    企画
+                    <strong id="by">∧°┐</strong>
+                </small>
+            </p>
+        </section>
     </article>
+    <menu></menu>
 </body>
 
 </html>

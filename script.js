@@ -11,10 +11,10 @@ function changeMain() {
     })
 }
 
-const dialogModal = document.querySelector('#modal');
+const dialog = document.querySelector('#modal');
 function onModal() {
-    if (typeof dialogModal.showModal === "function") {
-        dialogModal.showModal();
+    if (typeof dialog.showModal === "function") {
+        dialog.showModal();
     } else {
         alert("The <dialog> API is not supported by this browser");
     }
@@ -22,5 +22,5 @@ function onModal() {
 
 const closeBtn = document.querySelector('#closeBtn');
 closeBtn.addEventListener('click', () => {
-    dialogModal.close();
+    dialog.close();
 });

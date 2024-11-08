@@ -1,0 +1,52 @@
+figure {
+    background: #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 1 / 0.7;
+    margin: 1rem 0;
+}
+
+figure span {
+    color: #000;
+    display: grid;
+    place-items: center start;
+    font-size: xx-large;
+    padding: 1rem;
+    width: 50%;
+}
+
+figure span:hover {
+    background: linear-gradient(0.25turn, #FBDC02, #FC2C7F, #9DFAD7);
+    color: #fff;
+    cursor: pointer;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+figure span[dir="ltr"]::after {
+    content: '←';
+}
+
+figure span[dir="rtl"]::after {
+    content: '→';
+}
+
+figure span[dir="ltr"]::after,
+figure span[dir="rtl"]::after {
+    font-size: 200%;
+    font-weight: 900;
+}
+
+figure figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    mix-blend-mode: difference;
+    padding: 0.5rem;
+    width: 100%;
+}

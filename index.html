@@ -12,13 +12,13 @@
     <meta content="音ビル | OTO Building" property="og:title">
     <meta content="4.11.2019 - 3.30.2022 | あなたの場をより快適にするための場" name="description">
     <meta content="4.11.2019 - 3.30.2022 | あなたの場をより快適にするための場" name="og:description">
-    <script src="projects/index.js"></script>
+    <script src="main/who.js"></script>
     <script>
         document.addEventListener('readystatechange', event => {
             if (event.target.readyState === 'interactive') {
-                whoJSON('projects/index.json')
-            }
-        })
+                whoJSON('main/who.json')
+            };
+        }, false);
     </script>
 
     <!--for Twitter-->
@@ -29,14 +29,54 @@
 
     <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @media screen and (max-width: 1000px) {
+            html {
+                font-size: 2vw;
+            }
+
+            .button {
+                font-size: 250%;
+                width: 7.5vw;
+                height: 7.5vw;
+            }
+
+            button {
+                font-size: 200%;
+            }
+
+            header,
+            #modal h3 i {
+                font-size: 150%;
+            }
+
+            #hello {
+                background-size: 70%;
+            }
+
+            #hello h1 {
+                margin: 3.5rem 12.5vw;
+            }
+
+            #hello h2 {
+                margin: 2.5rem 2vw;
+            }
+
+            footer a {
+                width: 20rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <header onClick="window.open('main/', '_self')">
+    <header onclick="window.open('main/', '_self')">
         <time>4.2.2019</time>
         <strong>あなたの場をより快適にするための場</strong>
         <time>3.30.2022</time>
     </header>
+
     <main id="hello">
         <img class="logo" src="img/logo.png" alt="音ビル ロゴ デザイン:金氏徹平">
         <h1>
@@ -51,6 +91,7 @@
             who obtained Grant for the cultivation of a creative place and environment.
         </h2>
     </main>
+
     <main id="main" hidden>
         <h3>There are <i>two rooms</i> here.</h3>
         <h3>
@@ -70,14 +111,34 @@
         </p>
         <button type="button" class="button" onclick="changeMain()">←</button>
     </main>
+
     <footer>
         <button type="button" onclick="onModal()">助成</button>
-        <img src="img/chishima.png" alt="おおさか創造千島財団" onclick="location.assign('https://chishima-foundation.com/')">
+        <a href="https://chishima-foundation.com/" target="_blank">
+            <img src="img/chishima.png" alt="おおさか創造千島財団">
+        </a>
     </footer>
 
     <dialog id="modal">
-        <button type="button" id="closeBtn" class="button">×</button>
-        <h3>創造的場づくり助成 2019 - 2021</h3>
+        <h3>
+            <i>創造的場づくり助成 2019 - 2021</i>
+            <button type="button" id="closeBtn" class="button">×</button>
+        </h3>
+        <details id="yoshioka">
+            <summary>よしおかさんち</summary>
+        </details>
+        <details id="maeda">
+            <summary>前田文化</summary>
+        </details>
+        <details id="folk">
+            <summary>FOLK old book store</summary>
+        </details>
+        <details id="tratravel">
+            <summary>TRA-TRAVEL</summary>
+        </details>
+        <details id="pehu">
+            <summary>∧° ┐</summary>
+        </details>
     </dialog>
 
     <script src="script.js"></script>

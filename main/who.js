@@ -6,20 +6,17 @@ async function whoJSON(requestURL) {
     const jsonIndex = await response.text();
     const index = JSON.parse(jsonIndex);
     projects(index);
-}
+};
 
 function projects(obj) {
-    const modal = document.querySelector('#modal');
-    const projects = obj.projects;
-    for (const project of projects) {
+    for (const project of obj.projects) {
         const projectA = document.createElement('a');
+        projectA.innerHTML = `
+        <sup>${project.year}</sup>
+        ${project.title}
+        `;
         projectA.href = project.link;
         projectA.setAttribute('target', '_blank');
-        projectA.innerHTML = `
-        <small>${project.by}</small>
-        <time>${project.year}</time>
-        <strong>${project.title}</strong>
-        `
-        modal.appendChild(projectA);
-    }
-}
+        document.querySelector(`#${project.by}`).appendChild(projectA);
+    };
+};

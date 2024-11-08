@@ -26,35 +26,56 @@
 
     <style>
         @media print {
-            header {
+
+            header,
+            h1 small {
                 display: none;
             }
         }
     </style>
+
+    <script src="js/script.js"></script>
 </head>
 
 <body class="sky">
     <header>
-        <button class="rainbow" type="button">
+        <button class="rainbow" type="button" onclick="changeMain()">
             <span>i</span>
         </button>
     </header>
+
     <main id="main">
         <h1>
-            Peace for Future<br />
+            Peace for Future
             <small class="rainbow">あなたの場をより快適にするための場</small>
         </h1>
-        <marquee behavior="alternate" direction="right">Think<br>思考</marquee>
-        <marquee behavior="alternate" direction="left">Organize<br>整理</marquee>
-        <marquee behavior="alternate" direction="right">Communication<br>交流</marquee>
-        <marquee behavior="alternate" direction="left">Creation<br>制作</marquee>
-        <marquee behavior="alternate" direction="right">Refrash<br>休憩</marquee>
+        <p hidden>Think<br>思考</p>
+        <p hidden>Organize<br>整理</p>
+        <p hidden>Communication<br>交流</p>
+        <p hidden>Creation<br>制作</p>
+        <p hidden>Refrash<br>休憩</p>
     </main>
-    <main id="infomation" hidden></main>
+    <main id="infomation" hidden>
+        <h2 class="rainbow">
+            <b>✌️</b>
+            <span></span>
+            <span>f</span>
+            <span>o</span>
+            <span>r</span>
+            <span></span>
+            <span>未</span>
+            <span>来</span>
+            <br />
+            <button type="button" onClick="window.open('welcome.pdf', '_blank')">PDF</button>
+        </h2>
+        <h3>
+            <time>1.5.2020</time><br />
+            Published by<br />
+            creative, community space ∧° ┐
+        </h3>
+    </main>
 
-    <footer id="footer">
-        <marquee behavior="scroll" direction="left"></marquee>
-    </footer>
+    <footer id="footer"></footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/weather.js"></script>
@@ -65,35 +86,6 @@
                 $this.replaceWith($this.text().replace(/(\S)/g, "<span>$&</span>"));
             }
         });
-    </script>
-    <script>
-        let btn = document.querySelector('header button');
-        btn.addEventListener('click', function () {
-            changeMain()
-        }, false);
-
-        function changeMain() {
-            const mainAll = document.querySelectorAll('main');
-            mainAll.forEach(main => {
-                if (main.hidden == false) {
-                    main.hidden = true;
-                    main.style.display = "none";
-                } else {
-                    main.hidden = false;
-                    main.style.display = "flex";
-                }
-            })
-        }
-
-        async function fetchHTML(url = '', query = '') {
-            fetch(url)
-                .then(response => response.text())
-                .then(html => {
-                    document.querySelector(query).innerHTML = html
-                });
-        }
-
-        fetchHTML('infomation.html', '#infomation')
     </script>
 </body>
 
