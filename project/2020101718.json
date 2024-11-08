@@ -1,0 +1,41 @@
+{
+    "title": "ニューライフコレクション",
+    "info": {
+        "from": "10.17.2020",
+        "to": "10.18.2020",
+        "title": "New Life Collection",
+        "form": "販売会",
+        "open": "11:00",
+        "close": "18:00",
+        "at": "main room",
+        "entrance": "無料 FREE",
+        "project": "2020101718",
+        "by": "∧°┐"
+    },
+    "description": "こ・こ・ろ・豊かな休日の過ごし方をご提案...",
+    "html": [
+        {
+            "element": "h3",
+            "inner": "こ・こ・ろ・豊かな休日の過ごし方をご提案..."
+        },
+        {
+            "element": "p",
+            "inner": "古着を中心に、CDやカセットテープ、本やZineなど選りすぐりのバラエティ豊かな品揃え。"
+        }
+    ],
+    "img": [
+        {
+            "id": "main",
+            "img": [
+                "https://d2w9rnfcy7mm78.cloudfront.net/28963258/original_eaaefa108839b36f47fe1691c5944f42.jpg",
+                "https://d2w9rnfcy7mm78.cloudfront.net/28963257/original_38d65ab8fb3ccc731734e6774c49d92c.jpg",
+                "https://d2w9rnfcy7mm78.cloudfront.net/28963260/original_78d012bd1c90044c6645231308259765.jpg",
+                "https://d2w9rnfcy7mm78.cloudfront.net/28963261/original_85221f3131977926c5e65c51fee0a427.jpg",
+                "https://d2w9rnfcy7mm78.cloudfront.net/28963265/original_6368986ed2a6271f6dfcbb3ec7d2ac4a.jpg",
+                "https://d2w9rnfcy7mm78.cloudfront.net/28963256/original_6d352479e3bd4f1461ae1d9e1978c042.jpg",
+                "https://d2w9rnfcy7mm78.cloudfront.net/28963259/original_29fecda799955fca64e3fa2cd8e61bb1.jpg",
+                "https://d2w9rnfcy7mm78.cloudfront.net/28963269/original_3fa22fb9ffbf3a290821a18787644a88.jpg"
+            ]
+        }
+    ]
+}

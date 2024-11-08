@@ -44,8 +44,8 @@
             "open": "13:00 - 18:00",
             "close": "22:00 - 5:00",
             "at": "main room",
-            "entrance": "無料",
-            "link": "https://www.instagram.com/p/CX_QOtKlHkh/",
+            "entrance": "無料 FREE",
+            "project": "2021123031",
             "by": "∧°┐"
         },
         {
@@ -56,7 +56,7 @@
             "open": "15:00",
             "close": "21:00",
             "at": "main room",
-            "entrance": "無料",
+            "entrance": "無料 FREE",
             "link": null,
             "by": "∧°┐"
         },
@@ -81,7 +81,7 @@
             "close": "19:00",
             "at": "1F と main room",
             "entrance": "自由料金制",
-            "link": null,
+            "link": "https://vg.pe.hu/jp/2020/cocoro/",
             "by": "∧°┐"
         },
         {
@@ -92,7 +92,7 @@
             "open": "11:00",
             "close": "17:00",
             "at": "main room",
-            "entrance": "無料",
+            "entrance": "無料 FREE",
             "link": null,
             "by": "∧°┐"
         },
@@ -105,7 +105,7 @@
             "close": "19:00",
             "at": "main room と β room",
             "entrance": "自由料金制",
-            "link": null,
+            "link": "https://vg.pe.hu/jp/2020/otobuil/",
             "by": "∧°┐"
         },
         {
@@ -117,7 +117,7 @@
             "close": "19:00",
             "at": "β room",
             "entrance": "1000円",
-            "link": null,
+            "link": "https://vg.pe.hu/jp/2020/pre-event/",
             "by": "∧°┐"
         },
         {
@@ -128,8 +128,8 @@
             "open": "11:00",
             "close": "18:00",
             "at": "main room",
-            "entrance": "無料",
-            "link": null,
+            "entrance": "無料 FREE",
+            "project": "2020101718",
             "by": "∧°┐"
         },
         {
@@ -140,8 +140,20 @@
             "open": "11:00",
             "close": "17:00",
             "at": "main room",
-            "entrance": "無料",
+            "entrance": "無料 FREE",
             "link": null,
+            "by": "∧°┐"
+        },
+        {
+            "from": "5.30.2020",
+            "to": "5.31.2020",
+            "title": "New Life Collection",
+            "form": "生配信",
+            "open": "11:00",
+            "close": "19:00",
+            "at": "YouTube Live",
+            "entrance": "無料 FREE",
+            "project": "2020053031",
             "by": "∧°┐"
         },
         {
@@ -152,7 +164,7 @@
             "open": "12:00",
             "close": "18:00",
             "at": "main room",
-            "entrance": "無料",
+            "entrance": "無料 FREE",
             "link": "https://www.facebook.com/events/4344725488887074/",
             "by": "TRA-TRAVEL"
         },
@@ -164,7 +176,7 @@
             "open": "13:00",
             "close": "18:00",
             "at": "β room",
-            "entrance": "FREE",
+            "entrance": "無料 FREE",
             "link": "../beta/",
             "by": "∧°┐"
         },
@@ -176,7 +188,7 @@
             "open": "13:00",
             "close": "未定",
             "at": "1F, main room & β room",
-            "entrance": "無料",
+            "entrance": "無料 FREE",
             "link": "https://surround-circuit.web.app/",
             "by": "∧°┐"
         },

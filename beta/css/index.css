@@ -3,7 +3,14 @@ html {
     height: -webkit-fill-available;
 }
 
+@media screen and (max-width: 550px) {
+    html {
+        font-size: 3vw;
+    }
+}
+
 body {
+    overflow: hidden;
     height: 100dvh;
     max-height: -webkit-fill-available;
 }

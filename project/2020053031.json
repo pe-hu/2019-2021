@@ -1,0 +1,37 @@
+{
+    "title": "ニューライフコレクション",
+    "info": {
+        "from": "5.30.2020",
+        "to": "5.31.2020",
+        "title": "New Life Collection",
+        "form": "生配信",
+        "open": "11:00",
+        "close": "19:00",
+        "at": "YouTube Live",
+        "entrance": "無料 FREE",
+        "project": "2020053031",
+        "by": "∧°┐"
+    },
+    "description": "こ・こ・ろ・豊かな休日の過ごし方をご提案...",
+    "html": [
+        {
+            "element": "h3",
+            "inner": "テレフォンショッピングをバーチャル開催"
+        },
+        {
+            "element": "p",
+            "inner": "新型コロナウイルス感染拡大を受け、開催方法変更しYouTube生配信イベントを音ビルより配信"
+        }
+    ],
+    "img": [
+        {
+            "id": "live",
+            "img": [
+                "https://d2w9rnfcy7mm78.cloudfront.net/28963925/original_2d5e54d9ca004469e6485f2ba90cc036.jpg",
+                "https://d2w9rnfcy7mm78.cloudfront.net/28963930/original_8d8a145e5b1d115de1c485f60c393b55.jpg",
+                "https://d2w9rnfcy7mm78.cloudfront.net/28963241/original_7a2d8b60cb27e7e91ec8c2b2cd312edf.png",
+                "https://d2w9rnfcy7mm78.cloudfront.net/28963236/original_1ec2b9efeb9cfebcb72e79704177ce81.jpg"
+            ]
+        }
+    ]
+}

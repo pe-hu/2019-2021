@@ -19,7 +19,11 @@ function projects(obj) {
         document.querySelector('menu').appendChild(li);
 
         li.addEventListener('click', function () {
-            fiveWs(project)
+            fiveWs(project);
+            const element = document.querySelector('header');
+            element.scrollIntoView({
+                behavior: 'smooth'
+            }, false);
         }, false);
     };
 };
